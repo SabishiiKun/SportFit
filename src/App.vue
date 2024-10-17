@@ -1,29 +1,29 @@
 <template>
   <div id="app">
-    <MiComponente></MiComponente>
     <div class="navbar-container">
                 <div class="navbar">
                     <div class="logo">
                         Sport
                         <span>Fit</span>
                     </div>
-                    <a href="">Home</a>
-                    <a href="">About Us</a>
-                    <a href="">Classes & Services</a>
-                    <a href="">Blog</a>
-                    <a href="">Contact</a>
+                    <RouterLink to="/home" class="button-nav">Home</RouterLink>
+                    <RouterLink to="about" class="button-nav">About</RouterLink>
+                    <RouterLink to="/home" class="button-nav">Classes & Services</RouterLink>
+                    <RouterLink to="about" class="button-nav">Blog</RouterLink>
+                    <RouterLink to="/home" class="button-nav">Contact</RouterLink>
                 </div>
             </div>
   </div>
+  <main>
+    <RouterView />
+  </main>
 </template>
 
 <script>
-import MiComponente from './components/MiComponente.vue';
  
 export default {
   name: 'App',
   components: {
-    MiComponente
   }
 }
 </script>
