@@ -4,17 +4,10 @@ body {
 }
 
 .navbar-container {
-  position: fixed;
-  top: -50px;  
   width: 100%;
-  left: 0;
   background-color: #333;
-  transition: top 0.4s ease;  
 }
 
-.navbar-container:hover {
-  top: 0; 
-}
 .logo {
   display: flex;
   font-weight: 700;
@@ -32,11 +25,10 @@ body {
   display: flex; 
   justify-content: space-between;
   align-items: center;
-  align-content: center;   
-  height: 39px;         
+  align-content: center;  
   background-color: #333;
-  padding: 15px;
-  width: 90%;
+  padding: 2rem;
+  max-width: 100%;
 
    .button-nav {
       display: flex;
@@ -63,15 +55,13 @@ body {
 }
 
 .banner-container {
-  border: 2px solid #444;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  position: relative;
+  z-index: 100;
   padding-top: 20px;
-  width: auto;
-  height: 700px;
+  width: 100%;
+  height: 45rem;
   background-image: url(../img/banner.jpg);
-  background-size: cover;
   background-position: center;
   text-align: center !important;
 
