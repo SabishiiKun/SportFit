@@ -2,6 +2,9 @@ import { createMemoryHistory, createRouter } from 'vue-router'
 
 import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
+import Contact from '../views/Contact.vue'
+import Services from '../views/Services.vue'
+import Blog from '../views/Blog.vue'
 
 const routes = [
   { path: '/home', 
@@ -11,6 +14,21 @@ const routes = [
     path: '/about', 
     name: 'about',
     component: AboutView
+  },
+  { 
+    path: '/contact', 
+    name: 'contact',
+    component: Contact
+  },
+  { 
+    path: '/services', 
+    name: 'services',
+    component: Services
+  },
+  { 
+    path: '/blog', 
+    name: 'blog',
+    component: Blog
   },
 ]
 

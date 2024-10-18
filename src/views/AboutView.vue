@@ -1,15 +1,37 @@
 <template>
-    <h1>Hello App!</h1>
-    <p>
-      <strong>Current route path:</strong> {{ $route.fullPath }}
-    </p>
-    <nav>
-      <RouterLink to="/">Go to Home</RouterLink>
-      <RouterLink to="/about">Go to About</RouterLink>
-    </nav>
-    <main>
-      <RouterView />
-    </main>
+  <div class="mi-componente">
+    <div class="content">
+      <div class="home">
+        <div class="banner-container">
+          <div class="overlay-text">
+            <div class="main-text">
+
+            </div>
+            <div class="sub-text">
+              
+              <div>
+                <div class="button-home">
+                  <div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main>
+    <RouterView />
+  </main>
   </template>
   
   <script>
@@ -17,6 +39,3 @@
     name: 'AboutView',
   };
   </script>
-  
-  <style scoped>
-  </style>
